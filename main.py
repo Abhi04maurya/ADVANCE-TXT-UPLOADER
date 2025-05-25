@@ -562,11 +562,11 @@ async def upload(bot: Client, m: Message):
     await input6.delete(True)
     await editable.delete()
 
-    #thumb = input6.text
-    #if thumb.startswith("http://") or thumb.startswith("https://"):
+    thumb = input6.text
+    if thumb.startswith("http://") or thumb.startswith("https://"):
         #getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
         #thumb = "thumb.jpg"
-    else:
+    #else:
         thumb == "no"
     failed_count =0
     if len(links) == 1:
